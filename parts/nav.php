@@ -22,6 +22,7 @@
 				<li><a href="activites.php">Activités</a></li>
 				<li><a href="formulaire.php">Inscription</a></li>
 				<li><a href="connexion.php">Connexion</a></li>
+				<li><a href="administration.php">Administration</a></li>
 			</ul>
 		</div>
 	</div>
