@@ -48,16 +48,16 @@
 							</h2>
 							<div>
 								<figure>
-									<img src="img/salle1.jpg">
+									<img src="/img/salle1.jpg">
 									<figcaption>Salle1</figcaption>
 								</figure><figure>
-									<img src="img/salle2.jpg">
+									<img src="/img/salle2.jpg">
 									<figcaption>Salle2</figcaption>
 								</figure><figure>
-									<img src="img/salle3.jpg">
+									<img src="/img/salle3.jpg">
 									<figcaption>Salle3</figcaption>
 								</figure><figure>
-									<img src="img/salle4.jpg">
+									<img src="/img/salle4.jpg">
 									<figcaption>Salle4</figcaption>
 								</figure>
 							</div>
