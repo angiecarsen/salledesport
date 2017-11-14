@@ -24,7 +24,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error); 
 }  
  
-$sql = "SELECT id, prenom, nom FROM adherent WHERE numero = '12345678'"; 
+$sql = "SELECT id, prenom, nom FROM adherent"; 
 $result = $conn->query($sql); 
  
 if ($result->num_rows > 0) { 

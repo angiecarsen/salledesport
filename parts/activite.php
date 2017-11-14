@@ -1,5 +1,5 @@
-<article class="col-md-6">
-	<section class="activite">
+<article class="container">
+	<section class="activite col-md-6">
 	<h4>Nom de l'activité</h4>
 	<p class="nom"></p>
 	<h3> La date - Numéro de la salle </h3>
