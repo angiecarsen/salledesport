@@ -1,4 +1,4 @@
-<?php $connecteur = new PDO('mysql:host=localhost;dbname=salle de sport','salledesport','Totodu21');
+<?php $connecteur = new PDO('mysql:host=localhost;dbname=salle de sport','salledesport','cfjacquet15');
           $resultatsalle = $connecteur->query('SELECT * FROM salle ;')->fetchAll(PDO::FETCH_ASSOC); 
                     var_dump($resultatsalle)
 
@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>COACH</title>
+	<title>SALLE</title>
 </head>
 <body>
 	
