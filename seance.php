@@ -27,6 +27,9 @@ FROM coach AS c,seance AS s
 WHERE s.idCoach = c.id')->fetchAll(PDO::FETCH_ASSOC);
 	echo '<p>'.$resultatdeux[$i]['nomComplet'].'</p>';
 
+$resultattroix = $connecteur->query('SELECT * FROM salle AS sa,seance AS s WHERE sa.id = s.idSalle')->fetchAll(PDO::FETCH_ASSOC);
+echo '<p>'.$resultattroix[$i]['nom'].'</p>';
+
 	$i++;
 }
 ?>

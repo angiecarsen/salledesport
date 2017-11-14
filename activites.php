@@ -6,7 +6,7 @@
 <h3>Nos activités</h3>
 
 <?php 
-require_once('parts/activite.php');
+require_once('seance.php');
 ?>
 
 <?php require_once('parts/footer.php'); ?>
