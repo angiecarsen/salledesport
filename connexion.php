@@ -1,42 +1,43 @@
 <?php 
 session_start(); 
+
+// Créer la connection
+$connecteur = new PDO('mysql:host=localhost;dbname=salle_sport','salledesport','hopeforce3');
+
+
+
+if (!isset($_SESSION['role'])) { //On vérifie que l'on se soit pas connecté 
+	if (isset($_GET['admin'])) {   //On regarde si l'utilisateur veut s'identifier en admin
+	
+
+
+	} else if (isset($_GET['user'])) { //ou en adherent
+		$email = /*$_POST['email']*/ 'jean@pruliere.fr';
+		 
+		$mailbdd = $connecteur->query('SELECT email FROM adherent')->fetchAll(PDO::FETCH_ASSOC);
+		var_dump($mailbdd);
+
+		foreach ($mailbdd as $m) {
+			if ($m['email'] == $email) {
+				echo $email;
+			}
+		}
+
+		$_SESSION['prenom'] = '06553'; 
  
-if (!isset($_SESSION['numero'])) { 
-  $_SESSION['numero'] = '06553'; 
- 
-  echo $_SESSION['numero']; 
- 
- 
- 
-} else { 
-  unset($_SESSION['numero']); 
+  		echo $_SESSION['prenom'];
+
+
+	}
+   
+
+} else {  //Sinon on déconnecte
+  unset($_SESSION['prenom']);
+  unset($_SESSION['role']); 
 } 
  
-$servername = "localhost"; 
-$username = "root"; 
-$password = ""; 
-$dbname = "salle_sport"; 
- 
-// Create connection 
-$conn = new mysqli($servername, $username, $password, $dbname); 
-// Check connection 
-if ($conn->connect_error) { 
-    die("Connection failed: " . $conn->connect_error); 
-}  
- 
-$sql = "SELECT id, prenom, nom FROM adherent"; 
-$result = $conn->query($sql); 
- 
-if ($result->num_rows > 0) { 
-    // output data of each row 
-    while($row = $result->fetch_assoc()) { 
-        echo "<br> id: ". $row["id"]. " - Name: ". $row["prenom"]. " " . $row["nom"] . "<br>"; 
-    } 
-} else { 
-    echo "0 results"; 
-} 
- 
-$conn->close(); 
+
+	
+	 
   
- 
 ?>
