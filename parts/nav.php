@@ -1,3 +1,5 @@
+<?php session_start() ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -21,9 +23,12 @@
 				<li><a href="index.php">Acceuil</a></li>
 				<li><a href="activites.php">Activités</a></li>
 				<li><a href="formulaire.php">Inscription</a></li>
-				<li><a href="connexion.php">Connexion</a></li>
+				
 				<li><a href="administration.php">Administration</a></li>
 			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="connexion.php?admin"><?php if (isset($_SESSION['prenom'])) {echo 'Déconnexion';} else {echo 'Connexion';} ?></a></li>	
+			</ul>	
 		</div>
 	</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
