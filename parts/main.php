@@ -1,6 +1,6 @@
 <?php 
     require_once ('sallerequete.php');
-    var_dump($resultatsalle);
+    
     ?>
 
 <article>
