@@ -19,6 +19,14 @@ while ($i<count($resultatseance)) {
 
 	echo '<h3>Heure de Fin</h3>';
 	echo '<p>'.$resultatseance[$i]['heureFin'].'</p>';
+
+	$connecteur = new PDO('mysql:host=localhost;dbname=salle de sport','salledesport','Totodu21');
+
+	$resultatdeux = $connecteur->query('SELECT *
+FROM coach AS c,seance AS s
+WHERE s.idCoach = c.id')->fetchAll(PDO::FETCH_ASSOC);
+	echo '<p>'.$resultatdeux[$i]['nomComplet'].'</p>';
+
 	$i++;
 }
 ?>
