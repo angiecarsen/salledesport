@@ -1,6 +1,6 @@
 <?php $connecteur = new PDO('mysql:host=localhost;dbname=salle de sport','salledesport','Totodu21');
-                    $resultatcoach = $connecteur->query('SELECT * FROM coach ;')->fetchAll(PDO::FETCH_ASSOC); 
-                    var_dump($resultatcoach)
+          $resultatcoach = $connecteur->query('SELECT * FROM coach ;')->fetchAll(PDO::FETCH_ASSOC); 
+                    var_dump($resultatcoach);
 
 
     ?>
