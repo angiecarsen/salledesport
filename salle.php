@@ -17,10 +17,6 @@
 	 <?php
 	 $i=0;
 	 while ($i<count($resultatsalle)) {
-	 	echo '<h1>coach</h1>';
-	  echo '<p>'.$resultatsalle[$i]['nomComplet'].'</p>'; 
-
-	
 
 	echo '<h3>nom</h3>';
 	echo '<p>'.$resultatsalle[$i]['nom'].'</p>';
