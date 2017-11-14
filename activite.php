@@ -1,3 +1,3 @@
 <?php 
-require_once('parts/activites.php');
+require_once('parts/activite.php');
 ?>
