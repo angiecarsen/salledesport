@@ -17,5 +17,4 @@ require_once('parts/seance.php');
 require_once('parts/salle.php');
 ?>
 
-
 <?php require_once('parts/footer.php'); ?>

@@ -1,7 +1,5 @@
 			</div>
-			<aside class="sidebar col-md-3">
-				<?php require_once('sidebar.php') ?>
-			</aside>
+			
 		</main>
 		<footer class="text-center">
 			<p> &copy; Salle de Sport | Groupe 4 : Blaise, Fred, Thomas et Céline </p>
