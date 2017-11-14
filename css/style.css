@@ -60,3 +60,84 @@ span.compte {
 #panier a{
 	display: none;
 }
+
+header {
+	padding: 15px 0;
+	background-color: #a6a3a2;
+	margin-bottom: 30px;
+}
+
+.center-pills {
+	display: inline-block;
+}
+
+footer {
+	margin-top: 30px;
+	background-color: #3c3c3c;
+	color: #fff;
+	padding: 5px;
+}
+
+aside.sidebar {
+	background-color: #f5f5f5;
+	height: 100%;
+}
+
+span.compte {
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #554477;
+	color: #fff;
+	display: block;
+	padding: 20px;
+}
+
+
+
+
+#photosalle div figure {
+	display: inline-block;
+	width : 20%;
+	margin: 2%;
+	position : relative;
+	transition: 0.5s ease-out;
+}
+
+#photosalle div figure:hover{
+	transform: scale(1.1);
+}
+
+#photosalle div figure img {
+	width: 100%;
+}
+#photosalle div figure figcaption {
+	position: absolute;
+	bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    color: #FFF;
+    padding : 5px 0px; 
+}
+
+
+
+
+#panier h4 {
+	font-size: 1em;
+	margin-top: 0;
+}
+#panier img {
+	width: 100%;
+}
+
+#panier ul {
+	font-size: .9em;
+	list-style: : none;
+	padding-left: : 5px;
+}
+#panier a {
+	display: none;
+}
