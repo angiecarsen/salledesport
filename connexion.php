@@ -46,8 +46,6 @@ if (!isset($_SESSION['role'])) { //On vérifie que l'on se soit pas connecté
 			} 
 		}
 	}
-   
-echo "Bonjour ".$_SESSION['prenom'];
 
 } else {  //Sinon on déconnecte
   unset($_SESSION['prenom']);
