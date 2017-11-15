@@ -9,7 +9,9 @@ header {
 }
 
 footer {
-	margin-top: 30px;
+	position:absolute;
+	bottom: 0;
+	width: 100%;
 	background-color: #3c3c3c;
 	color: #fff;
 	padding: 5px;
