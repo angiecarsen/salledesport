@@ -10,11 +10,11 @@ require_once('parts/ajoutCoach.php');
 ?>
 
 <?php 
-require_once('parts/seance.php');
+require_once('parts/ajoutSeance.php');
 ?>
 
 <?php 
-require_once('parts/salle.php');
+require_once('parts/ajoutSalle.php');
 ?>
 
 <?php require_once('parts/footer.php'); ?>
