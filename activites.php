@@ -7,6 +7,6 @@
 
 <?php 
 require_once('seance.php');
-?>
+?> 
 
 <?php require_once('parts/footer.php'); ?>
