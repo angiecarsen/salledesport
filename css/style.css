@@ -96,7 +96,6 @@ span.compte {
 
 
 
-
 #panier h4 {
 	font-size: 1em;
 	margin-top: 0;
@@ -113,13 +112,3 @@ span.compte {
 #panier a {
 	display: none;
 }
-
-article {
-	background-color: #FFF;
-	border-radius: 05px; 
-	margin: 0 05%;
-	box-shadow: 1 1 10px 0px
-}
-article section {
-
-background-color: #f5f2f2;
