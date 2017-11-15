@@ -31,9 +31,12 @@
      while ($i<count($resultatsalle)) {
 
     echo "<figure>";
-	echo "<img src=img/Salle".$resultatsalle[$i]['id'].".jpg>";
+	echo "<a href=Salle".$resultatsalle[$i]['id']."php><img src=img/Salle".$resultatsalle[$i]['id'].".jpg></a>";
 	echo "<figcaption><p>Salle : ".$resultatsalle[$i]['nom'].'</p></figcaption>';
 	echo "</figure>";
+
+	
+
 
     $i++;
 }
