@@ -9,8 +9,9 @@
     <label for="email">Email:</label>
     <input type="email" class="form-control" id="email" required>
   
+	<label for="num">Numéro de téléphone:</label>
     <input type="texte" class="form-control" id="num" required>
-    <label for="num">Numéro de téléphone:</label>
+    
 	</div>
   <button type="submit" formaction="SQL/inscri.php" class="btn btn-default">Submit</button>
   
