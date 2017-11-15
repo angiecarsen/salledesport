@@ -8,8 +8,8 @@ $connecteur = new PDO('mysql:host=localhost;dbname=salle_sport','salledesport','
 
 if (!isset($_SESSION['role'])) { //On vérifie que l'on se soit pas connecté 
 
-	$email = $_POST['email']; //'joce@lyn.at';
-	$numero = $_POST['numero']; //'000011112222BBBB';
+	$email = $_POST['email']; 
+	$numero = $_POST['numero']; 
 
 	
 
@@ -26,10 +26,13 @@ if (!isset($_SESSION['role'])) { //On vérifie que l'on se soit pas connecté
 					$_SESSION['prenom'] = $ia['nomComplet'];		
 					header('Location: index.php');
 				} else {
-					echo "Erreur dans le numero";
+					exit("Erreur dans le numero </br> <a href='index.php'>Retour à l'accueil</a>") ;
+					
 				}
 			} 
 		}
+
+		echo "Erreur dans l'email </br> <a href='index.php'>Retour à l'accueil</a>";
 
 	} else if (isset($_POST['connec_adh'])) { //ou en adherent
 
@@ -45,10 +48,12 @@ if (!isset($_SESSION['role'])) { //On vérifie que l'on se soit pas connecté
 					$_SESSION['prenom'] = $iu['prenom'];		
 					header('Location: index.php');
 				} else {
-					echo "Erreur dans le numero";
+					exit("Erreur dans le numero </br> <a href='index.php'>Retour à l'accueil</a>") ;
 				}
 			} 
 		}
+
+		echo "Erreur dans l'email </br> <a href='index.php'>Retour à l'accueil</a>";
 	}
 
 } else {  //Sinon on déconnecte
