@@ -25,9 +25,6 @@
 				<li><a href="formulaire.php">Inscription</a></li>
 				
 				<li><a href="administration.php">Administration</a></li>
-			
-				
-
 			</ul>
 			
 
