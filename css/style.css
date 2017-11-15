@@ -80,6 +80,19 @@ span.compte {
     padding : 5px 0px; 
 }
 
+.col-sm-3{
+	background-color: #f5f2f2;
+	border-radius: 5px;
+	border: 1px solid #dfe0e1;
+	margin: 0 4%;
+	padding: 11px;
+	
+}
+
+h3 {
+	margin-left: 10px;
+}
+
 footer {
 	position:absolute;
 	bottom: 0;
