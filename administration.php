@@ -7,22 +7,22 @@
 
 
 <!--Ajout d'un coach -->
-<form>
+<form method="post" action="SQL/ajoutCoach.php">
   <div class="form-group">
 	<label for="prenom">nom complet :</label>
-    <input type="texte" class="form-control" id="prenom" required>
+    <input type="texte" class="form-control" id="prenom" name="prenom" required>
 	
     <label for="email">Email :</label>
-    <input type="email" class="form-control" id="email" required>
+    <input type="email" class="form-control" id="email" name="email" required>
   
     <label for="debut">Heure de début :</label>
-    <input type="texte" class="form-control" id="debut" required>
+    <input type="texte" class="form-control" id="debut" name="debut" required>
 	
 	<label for="fin">Heure de fin:</label>
-    <input type="texte" class="form-control" id="fin" required>
+    <input type="texte" class="form-control" id="fin" name="fin" required>
 	
 	<label for="licence">Licence :</label>
-    <input type="texte" class="form-control" id="licence" required>
+    <input type="texte" class="form-control" id="licence" name="licence"required>
 	
 	</div>
   <button type="submit" class="btn btn-default">Submit</button>
