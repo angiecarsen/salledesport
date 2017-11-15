@@ -16,10 +16,10 @@
     <input type="email" class="form-control" id="email" name="email" required>
   
     <label for="debut">Heure de début :</label>
-    <input type="texte" class="form-control" id="debut" name="debut" required>
+    <input type="texte" class="form-control" id="debut" name="debut" placeholder="HH:MM:SS" required>
 	
 	<label for="fin">Heure de fin:</label>
-    <input type="texte" class="form-control" id="fin" name="fin" required>
+    <input type="texte" class="form-control" id="fin" name="fin" placeholder="HH:MM:SS" required>
 	
 	<label for="licence">Licence :</label>
     <input type="texte" class="form-control" id="licence" name="licence"required>
@@ -30,7 +30,7 @@
 
 
 <!--Ajout d'une séance -->
-<form>
+<form method="post" action="SQL/ajoutSeance.php">
   <div class="form-group">
   
 	<label for="debut">Heure de début :</label>
@@ -60,17 +60,17 @@
 
 
 <!--Ajout d'une salle -->
-<form>
+<form method="psot" action="SQL/ajoutSalle.php">
   <div class="form-group">
   
 	<label for="nom">Nom de la salle :</label>
-    <input type="texte" class="form-control" id="nom" required>
+    <input type="texte" class="form-control" id="nom" name="nom" required>
 	
 	<label for="capacite">Capacité :</label>
-    <input type="texte" class="form-control" id="capacite" required>
+    <input type="texte" class="form-control" id="capacite" name="capacite" required>
 	
 	<label for="equipement">Equipement :</label>
-    <input type="texte" class="form-control" id="equipement" required>
+    <input type="texte" class="form-control" id="equipement" name="equipement" required>
 	
 	</div>
   <button type="submit" class="btn btn-default">Submit</button>
