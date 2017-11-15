@@ -91,6 +91,31 @@ footer {
 	padding: 5px;
 }
 
-form{
-	margin-bottom:40px;
+#panier ul {
+	font-size: .9em;
+	list-style: : none;
+	padding-left: : 5px;
+}
+#panier a {
+	display: none;
+}
+
+
+article {
+	background-color: #FFF;
+	margin: 0 5%;
+	padding: 10px;
+}
+section {
+	margin-bottom: 10px;
+	padding: 10px;
+
+}
+
+
+article section {
+	background-color: #f5f2f2;
+	border-radius: 5px;
+	border: 1px solid #dfe0e1;
+	
 }

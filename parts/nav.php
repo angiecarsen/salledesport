@@ -26,8 +26,17 @@
 				
 				<li><a href="administration.php">Administration</a></li>
 			</ul>
+			
+
 			<ul class="nav navbar-nav navbar-right">
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm"><?php if (isset($_SESSION['prenom'])) {echo 'Déconnexion';} else {echo 'Connexion';} ?></button>
+				<?php if (isset($_SESSION['prenom'])): ?>
+
+				<li><a>Bonjour <?php echo $_SESSION['prenom']; ?></a></li>
+				<li><a href="connexion.php">Déconnexion</a></li> 
+				
+				<?php else: ?>
+					
+				<li><a><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Connexion</button></a></li>
 
 				<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
 				  <div class="modal-dialog modal-sm" role="document">
@@ -49,14 +58,22 @@
 				      		  </div>
 				      		  <div class="form-group">
 				      		    <div class="col-sm-offset-2 col-sm-10">
-				      		      <button type="submit" class="btn btn-default">Sign in</button>
+				      		      <button type="submit" class="btn btn-default" name="connec_adh">Connexion Adhérent</button>
+				      		    </div>
+				      		  </div>
+				      		  <div class="form-group">
+				      		    <div class="col-sm-offset-2 col-sm-10">
+				      		      <button type="submit" class="btn btn-default" name="connec_coach">Connexion Coach</button>
 				      		    </div>
 				      		  </div>
 				      		</form>
 				        				    
 				    </div>
 				  </div>
-				</div>	
+				</div>
+
+				<?php endif; ?>	
+				
 			</ul>	
 		</div>
 	</div>

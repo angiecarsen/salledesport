@@ -11,6 +11,7 @@
 <?php 
 $i=0;
 while ($i<count($resultatseance)) {
+	echo '<article class="container">';
 	echo '<h1>intitule</h1>';
 	echo '<p>'.$resultatseance[$i]['intitule'].'</p>';
 

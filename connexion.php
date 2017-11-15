@@ -8,12 +8,12 @@ $connecteur = new PDO('mysql:host=localhost;dbname=salle_sport','salledesport','
 
 if (!isset($_SESSION['role'])) { //On vérifie que l'on se soit pas connecté 
 
-	$email = /*$_POST['email']*/ 'joce@lyn.at';
-	$numero = /*$_POST['numero']*/ '000011112222BBBB';
+	$email = $_POST['email']; //'joce@lyn.at';
+	$numero = $_POST['numero']; //'000011112222BBBB';
 
 	
 
-	if (isset($_GET['admin'])) {   //On regarde si l'utilisateur veut s'identifier en admin	
+	if (isset($_POST['connec_coach'])) {   //On regarde si l'utilisateur veut s'identifier en admin	
 
 	$info = $connecteur->query('SELECT * FROM coach')->fetchAll(PDO::FETCH_ASSOC);
 
@@ -31,7 +31,7 @@ if (!isset($_SESSION['role'])) { //On vérifie que l'on se soit pas connecté
 			} 
 		}
 
-	} else if (isset($_GET['user'])) { //ou en adherent
+	} else if (isset($_POST['connec_adh'])) { //ou en adherent
 
 	$info = $connecteur->query('SELECT * FROM adherent')->fetchAll(PDO::FETCH_ASSOC);	
 		
