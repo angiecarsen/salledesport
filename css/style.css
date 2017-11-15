@@ -32,37 +32,6 @@ span.compte {
 	padding: 20px;
 }
 
-.pingouin-sexe {
-	font-size: 2em;
-}
-
-.pingouin-sexe-m {
-	color: lightblue;
-}
-
-.pingouin-sexe-f {
-	color: pink;
-}
-
-#panier h4{
-	font-size: 1em;
-	margin-top: 0;
-}
-
-#panier img{
-	width: 100%;
-}
-
-#panier ul {
-	font-size: .9em;
-	list-style: none;
-	padding-left: 5px;
-}
-
-#panier a{
-	display: none;
-}
-
 header {
 	padding: 15px 0;
 	background-color: #a6a3a2;
