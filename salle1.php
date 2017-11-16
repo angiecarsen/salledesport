@@ -21,10 +21,12 @@
 	require_once('parts/nav.php');
 ?>
 <article>
+
 <h3>Tapis de course Salle : Bolt  </h3>
-<div class="container-fluid">    
-                     <div class="carousel  slide row" data-ride="carousel" data-type="multi" data-interval="3000" id="fruitscarousel">                             
-                        <div class="carousel-inner item">                            
+
+<div class="container-fluid">                         
+                    <div class="carousel  slide row" data-ride="carousel" data-type="multi" data-interval="3000" id="fruitscarousel">                             
+                        <div class="carousel-inner item">                                 
                             <div class="item active">                                     
                                 <div class="col-md-3 col-sm-4 col-xs-12">
                                     <a href="#"><img src="img/salleBolt1.jpg" class="img-responsive"></a>

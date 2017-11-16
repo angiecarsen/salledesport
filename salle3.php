@@ -43,7 +43,6 @@
 </div>
 </article>
 
-
 <?php require_once('parts/footer.php'); ?>
 
 

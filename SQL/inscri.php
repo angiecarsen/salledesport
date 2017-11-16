@@ -9,7 +9,7 @@ else $prenom="";
 if(isset($_POST['nom']))    
 {	
 	$nom=$_POST['nom'];
-	echo $nom;
+	echo $nom; 
 }
 else $nom="";
 
@@ -27,7 +27,7 @@ if(isset($_POST['num']))
 }
 else $num="";
 
-$connecteur = new PDO('mysql:host=localhost;dbname=salle_sport','salledesport','hopeforce3');
+$connecteur = new PDO('mysql:host=localhost;dbname=salledesport','salledesport','hopeforce3');
 $req = $connecteur->prepare('INSERT INTO adherent(prenom,nom,email,numero,dateInscription) VALUES(:prenom,:nom,:email,:num,NOW())');
 $req -> execute(array(
 'prenom' => $prenom,
@@ -36,4 +36,8 @@ $req -> execute(array(
 'num' => $num
 ));
 	?>
+	
+	<?php
+/*print_r($req->errorInfo());*/
+?>
 	
