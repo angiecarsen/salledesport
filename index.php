@@ -14,7 +14,7 @@
 	$page = 'accueil';
 	require_once('parts/nav.php');
 ?>
-<h3>Le Complexe Sportif</h3>
+<h3>Complexe Sportif</h3>
 
 <?php require_once('parts/main.php'); ?>
 
