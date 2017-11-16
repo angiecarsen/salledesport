@@ -16,7 +16,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.php">Dijon Sport</a>
+			<img src="img/logo.jpg" class="navbar-brand"/>  
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
