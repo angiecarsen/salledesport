@@ -7,73 +7,125 @@
 
 
 <!--Ajout d'un coach -->
-<form method="post" action="SQL/ajoutCoach.php">
-  <div class="form-group">
-	<label for="prenom">nom complet :</label>
-    <input type="texte" class="form-control" id="prenom" name="prenom" required>
-	
-    <label for="email">Email :</label>
-    <input type="email" class="form-control" id="email" name="email" required>
-  
-    <label for="debut">Heure de début :</label>
-    <input type="texte" class="form-control" id="debut" name="debut" placeholder="HH:MM:SS" required>
-	
-	<label for="fin">Heure de fin:</label>
-    <input type="texte" class="form-control" id="fin" name="fin" placeholder="HH:MM:SS" required>
-	
-	<label for="licence">Licence :</label>
-    <input type="texte" class="form-control" id="licence" name="licence"required>
-	
-	</div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+<div class="container">
 
+	<h4>Ajout d'un Coach</h4>
+
+	<form method="post" action="SQL/ajoutCoach.php">
+	  	<div class="form-group row">
+			<label for="prenom" class="col-sm-2 col-form-label">Nom complet :</label>
+	    	<div class="col-sm-10">
+	    		<input type="texte" class="form-control" id="prenom" name="prenom" required>
+	    	</div>
+		</div>
+
+		<div class="form-group row">
+		    <label for="email" class="col-sm-2 col-form-label">Email :</label>
+	    	<div class="col-sm-10">
+	    		<input type="email" class="form-control" id="email" name="email" required>
+	    	</div>	
+		</div>
+
+		<div class="form-group row">
+			<label for="debut" class="col-sm-2 col-form-label">Heure de début :</label>
+	    	<div class="col-sm-10">
+	    		<input type="texte" class="form-control" id="debut" name="debut" placeholder="HH:MM:SS" required>
+	    	</div>	
+		</div>
+
+		<div class="form-group row">
+			<label for="fin" class="col-sm-2 col-form-label">Heure de fin:</label>
+	    	<div class="col-sm-10">
+	    		<input type="texte" class="form-control" id="fin" name="fin" placeholder="HH:MM:SS" required>
+	    	</div>	
+		</div>
+
+		<div class="form-group row">
+			<label for="licence" class="col-sm-2 col-form-label">Licence :</label>
+	    	<div class="col-sm-10">
+	    		<input type="texte" class="form-control" id="licence" name="licence"required>
+			</div>
+		</div>
+
+	  <button type="submit" class="btn btn-primary">Valider</button>
+	</form>
+</div>
 
 <!--Ajout d'une séance -->
-<form method="post" action="parts/ajoutSeance.php">
-  <div class="form-group">
-  
-	<label for="debut">Heure de début :</label>
-    <input type="texte" class="form-control" id="debut" required>
+<div class="container">
 	
-	<div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-		<input class="span2" size="16" type="text" value="12-02-2012">
-		<span class="add-on"><i class="icon-remove"></i></span>
-		<span class="add-on"><i class="icon-th"></i></span>
-    </div>            
-	
-	<label for="fin">Heure de fin:</label>
-    <input type="texte" class="form-control" id="fin" required>
-	
-	<label for="intitule">Intitulé :</label>
-    <input type="texte" class="form-control" id="intitule" required>
-	
-    <label for="coach">Coach :</label>
-    <input type="texte" class="form-control" id="coach" required>
-	
-	<label for="salle">Salle :</label>
-    <input type="texte" class="form-control" id="salle" required>
-  
-	</div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+	<h4>Ajout d'une séance</h4>
 
+	<form method="post" action="parts/ajoutSeance.php">
+	  
+	  	<div class="form-group row">
+			<label for="debut" class="col-sm-2 col-form-label">Heure de début :</label>
+	    	<div class="col-sm-10">
+	    		<input type="texte" class="form-control" id="debut" required>
+	    	</div>
+		</div>   
+		
+		<div class="form-group row">
+			<label for="fin" class="col-sm-2 col-form-label">Heure de fin:</label>
+	    	<div class="col-sm-10">
+	    		<input type="texte" class="form-control" id="fin" required>
+	    	</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="intitule" class="col-sm-2 col-form-label">Intitulé :</label>
+	    	<div class="col-sm-10">
+	    		<input type="texte" class="form-control" id="intitule" required>
+	    	</div>
+		</div>
+
+		<div class="form-group row">
+	    	<label for="coach" class="col-sm-2 col-form-label">Coach :</label>
+	    	<div class="col-sm-10">
+	    		<input type="texte" class="form-control" id="coach" required>
+	    	</div>	
+		</div>
+
+		<div class="form-group row">
+			<label for="salle" class="col-sm-2 col-form-label">Salle :</label>
+	    	<div class="col-sm-10">
+	    		<input type="texte" class="form-control" id="salle" required>
+	    	</div>	
+	  	</div>
+
+	  <button type="submit" class="btn btn-primary">Valider</button>
+	</form>
+</div>
 
 <!--Ajout d'une salle -->
-<form method="post" action="SQL/ajoutSalle.php">
-  <div class="form-group">
-  
-	<label for="nom">Nom de la salle :</label>
-    <input type="texte" class="form-control" id="nom" name="nom" required>
-	
-	<label for="capacite">Capacité :</label>
-    <input type="texte" class="form-control" id="capacite" name="capacite" required>
-	
-	<label for="equipement">Equipement :</label>
-    <input type="texte" class="form-control" id="equipement" name="equipement" required>
-	
-	</div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+<div class="container">
 
+	<h4>Ajout d'une salle</h4>
+
+	<form method="post" action="SQL/ajoutSalle.php">
+	  	
+	  	<div class="form-group row">
+			<label for="nom" class="col-sm-2 col-form-label">Nom de la salle :</label>
+	    	<div class="col-sm-10">
+	    		<input type="texte" class="form-control" id="nom" name="nom" required>
+	    	</div>	
+		</div>
+
+		<div class="form-group row">
+			<label for="capacite" class="col-sm-2 col-form-label">Capacité :</label>
+	    	<div class="col-sm-10">
+	    		<input type="texte" class="form-control" id="capacite" name="capacite" required>
+	    	</div>	
+		</div>
+
+		<div class="form-group row">
+			<label for="equipement" class="col-sm-2 col-form-label">Equipement :</label>
+	    	<div class="col-sm-10">
+	    		<input type="texte" class="form-control" id="equipement" name="equipement" required>
+	    	</div>	
+		</div>
+
+	  <button type="submit" class="btn btn-primary">Valider</button>
+	</form>
+</div>
 <?php require_once('parts/footer.php'); ?>
