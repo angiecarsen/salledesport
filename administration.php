@@ -30,7 +30,7 @@
 
 
 <!--Ajout d'une séance -->
-<form method="post" action="SQL/ajoutSeance.php">
+<form method="post" action="parts/ajoutSeance.php">
   <div class="form-group">
   
 	<label for="debut">Heure de début :</label>
@@ -60,7 +60,7 @@
 
 
 <!--Ajout d'une salle -->
-<form method="psot" action="SQL/ajoutSalle.php">
+<form method="post" action="SQL/ajoutSalle.php">
   <div class="form-group">
   
 	<label for="nom">Nom de la salle :</label>

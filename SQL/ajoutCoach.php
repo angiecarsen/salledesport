@@ -17,5 +17,6 @@ echo "Le coach ".$prenom."a été ajouté avec succès !";
 echo "Une erreur est survenue. Vérifiez vos champs et reessayez.";
 }
 
-echo "<br><a href='../administration.php'>Retour à l'administration</a>"; 
+echo "<br><a href='../administration.php'>Retour à l'administration(Automatique dans 5s)</a>";
+echo "<script>setTimeout(\"location.href = '../administration.php';\",5000);</script>";
 ?>
