@@ -12,6 +12,7 @@ html {
 
 body{
 	background-image: url(../img/fond.jpg);
+	background-size: cover;
 	position: relative;
 	min-height: 100%;
 	padding-bottom: 5px;
