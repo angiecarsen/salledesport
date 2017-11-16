@@ -23,7 +23,8 @@ if (!isset($_SESSION['role'])) { //On vérifie que l'on se soit pas connecté
 				if ($ia['numeroLicence'] == $numero) {
 					
 					$_SESSION['role'] = 'admin';
-					$_SESSION['prenom'] = $ia['nomComplet'];		
+					$_SESSION['prenom'] = $ia['nomComplet'];
+
 					header('Location: index.php');
 				} else {
 					echo "Erreur dans le numero";
@@ -42,7 +43,9 @@ if (!isset($_SESSION['role'])) { //On vérifie que l'on se soit pas connecté
 				if ($iu['numero'] == $numero) {
 					
 					$_SESSION['role'] = 'user';
-					$_SESSION['prenom'] = $iu['prenom'];		
+					$_SESSION['prenom'] = $iu['prenom'];
+					$_SESSION['id'] = $iu['id'];
+							
 					header('Location: index.php');
 				} else {
 					echo "Erreur dans le numero";
