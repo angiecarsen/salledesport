@@ -13,5 +13,5 @@
 <?php 
 require_once('parts/inscription.php');
 ?>
-<?php require_once('parts/footer.php'); ?>
+<?php require_once('parts/footer.php'); ?> 
 

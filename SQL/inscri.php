@@ -9,7 +9,7 @@ else $prenom="";
 if(isset($_POST['nom']))    
 {	
 	$nom=$_POST['nom'];
-	echo $nom;
+	echo $nom; 
 }
 else $nom="";
 
@@ -38,6 +38,6 @@ $req -> execute(array(
 	?>
 	
 	<?php
-print_r($req->errorInfo());
+/*print_r($req->errorInfo());*/
 ?>
 	

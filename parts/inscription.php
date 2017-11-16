@@ -5,7 +5,7 @@
 			<div class="col-sm-10">
 				<input type="texte" class="form-control col-sm-2" id="prenom" name="prenom" required>
 			</div>
-		</div>
+		</div> 
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label" for="nom">Nom:</label>
 			<div class="col-sm-10">
