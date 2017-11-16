@@ -29,14 +29,14 @@
 		<div class="form-group row">
 			<label for="debut" class="col-sm-2 col-form-label">Heure de début :</label>
 	    	<div class="col-sm-10">
-	    		<input type="texte" class="form-control" id="debut" name="debut" placeholder="HH:MM:SS" required>
+	    		<input id="debut" type="time" class="form-control" name="debut" required>
 	    	</div>	
 		</div>
 
 		<div class="form-group row">
 			<label for="fin" class="col-sm-2 col-form-label">Heure de fin:</label>
 	    	<div class="col-sm-10">
-	    		<input type="texte" class="form-control" id="fin" name="fin" placeholder="HH:MM:SS" required>
+	    		<input type="time" class="form-control" id="fin" name="fin" required>
 	    	</div>	
 		</div>
 
@@ -61,14 +61,14 @@
 	  	<div class="form-group row">
 			<label for="debut" class="col-sm-2 col-form-label">Heure de début :</label>
 	    	<div class="col-sm-10">
-	    		<input type="texte" class="form-control" id="debut" required>
+	    		<input type="datetime-local" class="form-control" id="debut" name="debut" required>
 	    	</div>
 		</div>   
 		
 		<div class="form-group row">
 			<label for="fin" class="col-sm-2 col-form-label">Heure de fin:</label>
 	    	<div class="col-sm-10">
-	    		<input type="texte" class="form-control" id="fin" required>
+	    		<input type="datetime-local" class="form-control" id="fin" name="fin" required>
 	    	</div>
 		</div>
 
@@ -128,4 +128,5 @@
 	  <button type="submit" class="btn btn-primary">Valider</button>
 	</form>
 </div>
+
 <?php require_once('parts/footer.php'); ?>
