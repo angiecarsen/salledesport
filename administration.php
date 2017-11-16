@@ -56,7 +56,7 @@
 	
 	<h4>Ajout d'une séance</h4>
 
-	<form method="post" action="parts/ajoutSeance.php">
+	<form method="post" action="SQL/ajoutSeance.php">
 	  
 	  	<div class="form-group row">
 			<label for="debut" class="col-sm-2 col-form-label">Heure de début :</label>
@@ -75,21 +75,21 @@
 		<div class="form-group row">
 			<label for="intitule" class="col-sm-2 col-form-label">Intitulé :</label>
 	    	<div class="col-sm-10">
-	    		<input type="texte" class="form-control" id="intitule" required>
+	    		<input type="texte" class="form-control" id="intitule" name="intitule" required>
 	    	</div>
 		</div>
 
 		<div class="form-group row">
 	    	<label for="coach" class="col-sm-2 col-form-label">Coach :</label>
 	    	<div class="col-sm-10">
-	    		<input type="texte" class="form-control" id="coach" required>
+	    		<input type="texte" class="form-control" id="coach" name="coach" required>
 	    	</div>	
 		</div>
 
 		<div class="form-group row">
 			<label for="salle" class="col-sm-2 col-form-label">Salle :</label>
 	    	<div class="col-sm-10">
-	    		<input type="texte" class="form-control" id="salle" required>
+	    		<input type="texte" class="form-control" id="salle" name="salle" required>
 	    	</div>	
 	  	</div>
 
