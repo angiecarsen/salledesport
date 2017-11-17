@@ -21,7 +21,8 @@
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li><a href="index.php">Acceuil</a></li>
-				<li><a href="activites.php">Activités</a></li>
+				<li><a href="activites.php">Nos Activités</a></li>
+				<li><a href="noCoach.php">Nos Coachs</a></li>
 				<li><a href="formulaire.php">Inscription</a></li>
 				
 				<li><a href="administration.php">Administration</a></li>
