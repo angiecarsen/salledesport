@@ -6,9 +6,8 @@
 <h3>Panel administration</h3>
 
 
-<!--Ajout d'un coach -->
-<div class="container">
-
+<!--Ajout d'un coach --><div id="alignement">
+<div class="container"><div class="cadre">
 	<h4>Ajout d'un Coach</h4>
 
 	<form method="post" action="SQL/ajoutCoach.php">
@@ -49,11 +48,10 @@
 
 	  <button type="submit" class="btn btn-primary">Valider</button>
 	</form>
-</div>
+</div></div>
 
 <!--Ajout d'une séance -->
-<div class="container">
-	
+<div class="container"><div class="cadre">
 	<h4>Ajout d'une séance</h4>
 
 	<form method="post" action="SQL/ajoutSeance.php">
@@ -95,10 +93,10 @@
 
 	  <button type="submit" class="btn btn-primary">Valider</button>
 	</form>
-</div>
+</div></div>
 
 <!--Ajout d'une salle -->
-<div class="container">
+<div class="container"><div class="cadre">
 
 	<h4>Ajout d'une salle</h4>
 
@@ -127,6 +125,6 @@
 
 	  <button type="submit" class="btn btn-primary">Valider</button>
 	</form>
-</div>
+</div></div></div>
 
 <?php require_once('parts/footer.php'); ?>

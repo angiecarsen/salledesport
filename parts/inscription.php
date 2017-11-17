@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container"><div class="cadre">
 	<form class="form-horizontal" method="post" action="">
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label" for="prenom">Prénom:</label>
@@ -24,8 +24,6 @@
 				<input type="texte" class="form-control col-sm-2" id="num" name="num" required>
 			</div>
 		</div>
-		<div class="form-group row">
 			<button type="submit" class="btn btn-primary" formaction="SQL/inscri.php">Valider</button>
-		</div>
 	</form>
-</div>
+</div></div>
