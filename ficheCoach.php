@@ -32,7 +32,7 @@ while ($compteur<4&&$i<count($resultatcoach)) {
     $resultatdeux = $connecteur->query('SELECT *
 FROM coach AS c,seance AS s
 WHERE s.idCoach = c.id')->fetchAll(PDO::FETCH_ASSOC);
-    echo '<p><strong>Numéro de licence</strong> '.$resultatdeux[$i]['numeroLicence'].'</p>';
+    echo '<p><strong>Numéro de licence:</strong> '.$resultatdeux[$i]['numeroLicence'].'</p>';
     echo '</div>';
     $compteur++;
     $i++;
