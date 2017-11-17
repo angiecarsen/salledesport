@@ -2,3 +2,13 @@
 sallerequete\.php
 
 seance\.php
+
+parts/ajoutSeance\.php
+
+SQL/ajoutCoach\.php
+
+SQL/ajoutSalle\.php
+
+SQL/identifiants\.php
+
+SQL/identifiant\.php
