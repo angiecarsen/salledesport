@@ -1,5 +1,7 @@
 <?php
-$dbname='salle_sport';
+
+$host='localhost';
+$dbname='salledesport';
 $nomUser='salledesport';
 $mdp='hopeforce3';
 ?>
